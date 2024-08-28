@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embox Creative</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            height: 100%;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background: #1B263B;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #FFA500;
+        }
+
+        .hero {
+            background: url('/img/pexels-donaldtong94-325649.jpg') no-repeat center center/cover;
+            height: 600px;
+            color: #ffa500;
+            text-shadow: #1B263B 0.1em 0.1em 0.2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 600px;
+        }
+
+        .features {
+            padding: 50px 20px;
+            background-color: #E0E1DD;
+        }
+
+        .features h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .feature-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .feature {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .feature img {
+            width: 75px;
+            margin-bottom: 20px;
+        }
+
+
+        footer {
+            background: #1B263B;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: bottom;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive design */
+        @media(max-width: 768px) {
+            .feature-container, .testimonial-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav {
+                flex-direction: row;
+                padding: 5px;
+            }
+
+            header {
+                flex-direction: column;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* About Us Section */
+    .about {
+        padding: 50px 20px;
+        background-color: #F4F4F9; /* Light grey background for contrast */
+        color: #1B263B; /* Dark blue text color for readability */
+    }
+
+    #contact {
+        padding: 50px 20px;
+        background-color: #415A77; 
+        color: #1B263B; /* Dark blue text color for readability */
+    }
+
+    .about-container {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .about h2 {
+        margin-bottom: 20px;
+    }
+
+    .about p {
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+
+    #contact-header {
+        color: #ffa500;
+        font-size: 2rem;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    #mission {
+        margin-bottom: 40px;
+        line-height: 1.6;
+        width: 80%;
+    }
+
+    #mission p {
+        font-style: italic;
+        font-size:large;
+    }
+
+    #vision-accent {
+        font-weight: bold;
+    }
+
+    .accent {
+        font-weight: bold;
+        font-style:italic;
+    }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Embox Creative</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Our Benefits</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Embox Creative</h1>
+            <p>Innovative Solutions, Tangible Results</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <h2>About Us</h2>
+            <p>Embox Creative consists of passionate innovators dedicated to creating products that elevate your experience. Our journey started with a simple idea – to develop solutions that not only meet the needs of our customers but exceed their expectations.</p>
+            <p>At our core, we believe in the power of technology to transform lives. With years of expertise in the industry, we have crafted a product that combines functionality with elegance, ensuring that you get the best of both worlds.</p>
+            <p>Join us on this journey, and let's build a future where your needs are not just met but elevated to new heights.</p>
+            <br>
+            <h2>Our Mission</h2>
+            <p>Our mission is to empower businesses by providing innovative and tailored solutions that enhance their online presence, optimize their operations, and achieve their unique goals.</p>
+            <p>We believe in the power of creativity and technology to solve complex challenges and deliver measurable results. By leveraging cutting-edge tools and a client-centric approach, we strive to create impactful strategies that drive growth and success.</p>
+            <p class="accent">Our commitment to excellence ensures that we not only meet but exceed the expectations of our clients, fostering long-term partnerships built on trust and mutual success.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Our Benefits</h2>
+        <div class="feature-container">
+            <div id="mission">
+                <p>We envision a digital world where businesses of all sizes can leverage technology to reach their full potential. At Embox Creative, we are committed to being your trusted partner on this journey, <span id="vision-accent">providing solutions that not only meet but exceed your expectations.</span></p>
+            </div>
+            <div class="feature">
+                <img src="/img/icons/review.png" alt="Feature 1">
+                <h3>Expertise</h3>
+                <p>Our team comprises experienced professionals with a deep understanding of the digital landscape.
+                </p>
+            </div>
+            <div class="feature">
+                <img src="/img/icons/sketch.png" alt="Feature 2">
+                <h3>Customizable</h3>
+                <p>We tailor our solutions to meet your unique business requirements.</p>
+            </div>
+            <div class="feature">
+                <img src="/img/icons/business.png" alt="Feature 3">
+                <h3>Results-Driven</h3>
+                <p>Our focus is on delivering tangible results that contribute to your business growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 id="contact-header">Contact Us!</h2>
+
+        <script type="text/javascript" src="https://nexuspayroll.jotform.com/jsform/241845490526057"></script>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2024 Embox Creative. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
